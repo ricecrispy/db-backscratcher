@@ -19,6 +19,7 @@ cd db-backscratcher
 ```
 
 2. Set up the database
+- connect to the PostgreSQL server of your choice.
 - run `create-database.sql`.
 - run `create-table.sql`.
 - run `create-product.sql`, `delete-product.sql`, `get-all-products.sql`, `get-product.sql`, and `update-product.sql` in any order.
