@@ -1,4 +1,4 @@
-create function backscratcher.data.update_product(p_product_id UUID, p_product_name TEXT, p_product_description varchar(255), p_product_sizes size[], p_product_price float8)
+create function backscratcher.data.update_product(p_product_id UUID, p_product_name TEXT, p_product_description varchar(255), p_product_sizes backscratcher.data.size[], p_product_price float8)
 returns void
 language plpgsql
 as
