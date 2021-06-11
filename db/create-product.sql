@@ -1,4 +1,4 @@
-create function create_product(p_product_name varchar(100), p_product_description TEXT, p_product_sizes size[], p_product_price float8)
+create function backscratcher.data.create_product(p_product_name varchar(100), p_product_description TEXT, p_product_sizes size[], p_product_price float8)
 returns UUID
 language plpgsql
 as

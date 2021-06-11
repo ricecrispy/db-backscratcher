@@ -2,7 +2,7 @@ DROP SCHEMA public;
 
 CREATE SCHEMA IF NOT EXISTS data;
 
-CREATE TYPE size AS ENUM ('S', 'M', 'L', 'XL');
+CREATE TYPE backscratcher.data.size AS ENUM ('S', 'M', 'L', 'XL');
 
 CREATE TABLE IF NOT EXISTS backscratcher.data.products (
 	product_id UUID PRIMARY KEY,
