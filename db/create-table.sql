@@ -2,6 +2,8 @@ DROP SCHEMA public;
 
 CREATE SCHEMA IF NOT EXISTS data;
 
+SET SCHEMA 'data';
+
 CREATE TYPE backscratcher.data.size AS ENUM ('S', 'M', 'L', 'XL');
 
 CREATE TABLE IF NOT EXISTS backscratcher.data.products (
