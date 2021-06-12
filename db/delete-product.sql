@@ -1,4 +1,6 @@
-create function backscratcher.data.delete_product(p_product_id UUID)
+SET SCHEMA 'data';
+
+create function delete_product(p_product_id UUID)
 returns void
 language plpgsql
 as

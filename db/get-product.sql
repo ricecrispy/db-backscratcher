@@ -1,5 +1,7 @@
-create function backscratcher.data.get_product(p_product_id UUID)
-returns TABLE (product_id UUID, product_name VARCHAR(100), product_description TEXT, product_sizes data.size[], product_price float8)
+SET SCHEMA 'data';
+
+create function get_product(p_product_id UUID)
+returns TABLE (product_id UUID, product_name VARCHAR(100), product_description TEXT, product_sizes size[], product_price float8)
 language plpgsql
 as
 $$
